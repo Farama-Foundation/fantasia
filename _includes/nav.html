@@ -45,9 +45,8 @@
                 <img class="navbar-arrow" height="20px" src="{{ site.data.img.nav.arrow | relative_url }}" />
                 {%- endif -%}
                 <ul class="nav-subsubmenu">
-
                   {%- for subsublink in sublink.subsublinks -%}
-                  <li class="nav-subsubitem nav-item">
+                  <li class="nav-subsubitem nav-item" style="margin-left: -2px;">
                     {% assign img_link = "/assets/img/icons/" | append: sublink.title | append: "/" | | append:
                     subsublink.title | replace: " ", "" | replace: ":", "" | append: ".png" %}
                     <!-- currently dont have icons for each gym, so this is commented out -->
