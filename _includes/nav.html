@@ -49,7 +49,7 @@
                 <ul class="nav-subsubmenu">
                   {%- for subsublink in sublink.subsublinks -%}
                   <!-- no horizontal open space -->
-                  <li class="nav-subsubitem nav-item" style="margin-left: -1px;">
+                  <li class="nav-subsubitem nav-item" style="margin-left: -1.5px;">
                     {% assign img_link = "/assets/img/icons/" | append: sublink.title | append: "/" | | append:
                     subsublink.title | replace: " ", "" | replace: ":", "" | append: ".png" %}
                     <!-- currently dont have icons for each gym, so this is commented out -->
