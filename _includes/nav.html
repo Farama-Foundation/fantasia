@@ -37,7 +37,7 @@
               {% assign m_page = site.data.pages | where: "title", page.title | first %}
 
               {%- for sublink in m_page.sublinks -%}
-              <li class="nav-subitem-1 nav-item">
+              <li class="nav-subitem-1">
                 <a style="font-weight: normal;" class="nav-link js-scroll-trigger"
                   href="{{ site.baseurl }}/pages{{ page.path }}{{ sublink.path }}">{{
                   sublink.title }}</a>

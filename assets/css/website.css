@@ -96,7 +96,6 @@
 
 .nav-submenu {
     width: 75%;
-    max-height: 287px;
     display: flex;
     overflow-y: visible;
     flex-direction: column;
