@@ -11,7 +11,7 @@
     <img src="{{gif_path | relative_url}}.gif" alt="{{env}} gif" />
 
     <p style="text-align: left;" class="my-2">
-        This environment is part of the <a href="../{{env_type}}">{{env_type}} environments</a>.
+        This environment is part of the <a href="../{{env_type}}">{{env_type | replace: "_", " "}} environments</a>.
         Please read that page first for general information.
     </p>
 
