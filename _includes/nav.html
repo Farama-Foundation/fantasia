@@ -30,6 +30,7 @@
               {{ page.title }}
             </a>
 
+            
             {%- if page.sublinks -%}
             <img class="navbar-arrow" src="{{ site.data.img.nav.arrow | relative_url}}" />
             {%- endif -%}
@@ -37,7 +38,8 @@
               {% assign m_page = site.data.pages | where: "title", page.title | first %}
 
               {%- for sublink in m_page.sublinks -%}
-              <li class="nav-subitem-1">
+              <li class="nav-subitem-1" style="border-left: 0;">
+                
                 <a style="font-weight: normal;" class="nav-link js-scroll-trigger"
                   href="{{ site.baseurl }}/pages{{ page.path }}{{ sublink.path }}">{{
                   sublink.title }}</a>
@@ -46,7 +48,8 @@
                 {%- endif -%}
                 <ul class="nav-subsubmenu">
                   {%- for subsublink in sublink.subsublinks -%}
-                  <li class="nav-subsubitem nav-item" style="margin-left: -2px;">
+                  <!-- no horizontal open space -->
+                  <li class="nav-subsubitem nav-item" style="margin-left: -1px;">
                     {% assign img_link = "/assets/img/icons/" | append: sublink.title | append: "/" | | append:
                     subsublink.title | replace: " ", "" | replace: ":", "" | append: ".png" %}
                     <!-- currently dont have icons for each gym, so this is commented out -->
