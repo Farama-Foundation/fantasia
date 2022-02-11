@@ -81,7 +81,12 @@
     <li class="nav-item nav-first-item text-center" style="position: fixed; border:none;
     bottom: 5px;
     z-index: 1030;
-    color: white;">Copyright &copy; {{ site.copyright }} {{ 'now' | date: "%Y" }}
+    color: white;">
+    {% if site.copyright %}
+      Copyright &copy; {{ site.copyright }} {{ 'now' | date: "%Y" }}
+    {% else %}
+      {{site.message}}
+    {% endif %}
     </li>
   </ul>
 </nav>
