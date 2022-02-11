@@ -12,18 +12,42 @@
       path: "#interacting-with-the-environment"
     - title: "Additional Environment API"
       path: "#additional-environment-api"
+    - title: "Unwrapping an environment"
+      path: "#unwrapping-an-environment"
 
 - title: Vector API
   path: /vector_api
   sublinks: 
     - title: "Vectorized Environments"
       path: "#vectorized-environments"
+    - title: "Observation & Action spaces"
+      path: "#observation--action-spaces"
     - title: "Intermediate Usage"
       path: "#intermediate-usage"
     - title: "Advanced Usage"
       path: "#advanced-usage"
     - title: "API Reference"
       path: "#api-reference"
+
+- title: Spaces
+  path: /spaces
+  sublinks: 
+    - title: "Space Functions"
+      path: "#space-functions"
+    - title: "Box"
+      path: "#box"
+    - title: "Discrete"
+      path: "#discrete"
+    - title: "MultiBinary"
+      path: "#multibinary"
+    - title: "MultiDiscrete"
+      path: "#multidiscrete"
+    - title: "Dict"
+      path: "#dict"
+    - title: "Tuple"
+      path: "#tuple"
+    - title: "Utility Functions"
+      path: "#utility-functions"
 
 - title: Environments
   path: /environments
@@ -40,7 +64,7 @@
        path: "/taxi"
    - title: "Atari"
      path: "/atari"
-     image: ../environments/atari/videos/rix_deterministic.gif
+     image: ../environments/atari/videos/space_invaders.gif
      subsublinks: 
      - title: "Krull"
        path: "/krull"
@@ -48,6 +72,8 @@
        path: "/pong"
      - title: "Kangaroo"
        path: "/kangaroo"
+     - title: "Solaris"
+       path: "/solaris"
      - title: "Asterix"
        path: "/asterix"
      - title: "Battle Zone"
@@ -66,10 +92,14 @@
        path: "/centipede"
      - title: "Asteroids"
        path: "/asteroids"
+     - title: "Star Gunner"
+       path: "/star_gunner"
      - title: "Carnival"
        path: "/carnival"
      - title: "Enduro"
        path: "/enduro"
+     - title: "Time Pilot"
+       path: "/time_pilot"
      - title: "Pooyan"
        path: "/pooyan"
      - title: "Double Dunk"
@@ -100,12 +130,16 @@
        path: "/journey_escape"
      - title: "Atlantis"
        path: "/atlantis"
+     - title: "Tennis"
+       path: "/tennis"
      - title: "Boxing"
        path: "/boxing"
      - title: "Qbert"
        path: "/qbert"
      - title: "Berzerk"
        path: "/berzerk"
+     - title: "Space Invaders"
+       path: "/space_invaders"
      - title: "Bank Heist"
        path: "/bank_heist"
      - title: "Crazy Climber"
@@ -118,7 +152,7 @@
        path: "/pitfall"
    - title: "Mujoco"
      path: "/mujoco"
-     image: ../environments/mujoco/videos/hopper.gif
+     image: ../environments/mujoco/videos/ant.gif
      subsublinks: 
      - title: "Humanoid Standup"
        path: "/humanoid_standup"
@@ -169,27 +203,12 @@
   sublinks: 
     - title: "Example Custom Environment"
       path: "#example-custom-environment"
-
-- title: Wrappers
-  path: /wrappers
-
-- title: Spaces
-  path: /spaces
-  sublinks: 
-    - title: "Box"
-      path: "#box"
-    - title: "Discrete"
-      path: "#discrete"
-    - title: "MultiBinary"
-      path: "#multibinary"
-    - title: "MultiDiscrete"
-      path: "#multidiscrete"
-    - title: "Dict"
-      path: "#dict"
-    - title: "Tuple"
-      path: "#tuple"
-    - title: "Utility Functions"
-      path: "#utility-functions"
+    - title: "Subclassing gym.Env"
+      path: "#subclassing-gymenv"
+    - title: "Registering Envs"
+      path: "#registering-envs"
+    - title: "Creating a Package"
+      path: "#creating-a-package"
 
 - title: Third Party Environments
   path: /third_party_environments
@@ -197,13 +216,16 @@
     - title: "Video Game Environments"
       path: "#video-game-environments"
     - title: "Classic Environments (board, card, etc. games)"
-      path: "#classic-environments-(board,-card,-etc.-games)"
+      path: "#classic-environments-(board,-card,-etc-games)"
     - title: "Robotics Environments"
       path: "#robotics-environments"
     - title: "Autonomous Driving and Traffic Control Environments"
       path: "#autonomous-driving-and-traffic-control-environments"
     - title: "Other Environments"
       path: "#other-environments"
+
+- title: Wrappers
+  path: /wrappers
 
 #AUTOGENERATION ENDED
 
