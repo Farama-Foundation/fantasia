@@ -110,7 +110,7 @@
 
 .nav-subsubmenu {
     padding-inline-start: 0px;
-    max-height: 350px;
+    max-height: 250px;
     display: flex;
     overflow-y: visible;
     flex-direction: column;
